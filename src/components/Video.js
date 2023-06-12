@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import axios from 'axios';
 import './Video.css';
 import { useLocation } from 'react-router-dom';
@@ -14,6 +14,14 @@ function Video({ num }) {
   const [items, setItems] = useState([]);
   const navigate = useNavigate();
 
+  const videoRef = useRef();
+
+  const handlePlay = () => {
+    videoRef.current.play();
+  }
+  const handlePause = () => {
+    videoRef.current.pause();
+  }
   // const handleFileChange = (event) => {
   //   setSelectedVideo(event.target.files[0]);
   // };
@@ -37,8 +45,11 @@ function Video({ num }) {
   };
 
   return (
+    <>
     <div className="App">
       <h2>Accident Video {num}:</h2>
+
+      
 
       <div className="video-upload-box">
         <label htmlFor="file-input">
@@ -50,8 +61,9 @@ function Video({ num }) {
           ) : (
             <span></span>
           )} */}
-          <video controls>
-            <source src={'./src/Videos/Accident-1.mp4'} type="video/mp4" />
+          
+          <video autoplay loop controls  >
+            <source src='./src/Videos/Accident-1.mp4' type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </label>
@@ -66,7 +78,7 @@ function Video({ num }) {
 
       
     </div>
-
+    </>
   );
 }
 

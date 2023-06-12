@@ -50,7 +50,7 @@ function Video3({ num }) {
           ) : (
             <span></span>
           )} */}
-          <video controls>
+          <video controls  autoplay="autoplay" loop muted>
             <source src='./src/Videos/Accident-4.mp4' type="video/mp4" />
             Your browser does not support the video tag.
           </video>

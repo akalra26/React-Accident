@@ -1,0 +1,50 @@
+.video-upload-box {
+  
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 300px; */
+    margin: 90px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 50px;
+    margin: auto;
+    height: 25vh;
+    width: 20vw;
+    }
+  
+  
+    .video-upload-box video {
+      max-width: 20vw;
+      max-height: 20vh;
+     
+    }
+  
+    .contain {
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      height: 40vh;
+      margin: 20vx;
+    }
+  
+    .mybtn {
+      background-color: #3a803c; /* Green */
+      border: 2px solid black;
+      border-radius: 15px;
+      margin: 20px;
+      color: white;
+      size: 30px;
+      padding: 15px 34px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      
+    }
+    .mybtn:hover {
+      background-color: rgb(118, 241, 118);
+    }
+    

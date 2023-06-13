@@ -50,10 +50,11 @@ function Video2({ num }) {
           ) : (
             <span></span>
           )} */}
-          <video controls autoplay loop muted>
+          {/* <video controls autoplay loop muted>
             <source src='./src/Videos/Accident-4.mp4' type="video/mp4" />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
+          <iframe  src="https://www.youtube.com/embed/WhWNsFIq4LU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         
       </div>
       {/* <input id="file-input" type="file" accept="video/*" onChange={handleFileChange} /> */}

@@ -12,6 +12,8 @@ import ImageUpload from './components/ImageUpload';
 import VideoUpload from './components/VideoUpload'
 import AccidentVideo from './components/AccidentVideo';
 import Output from './components/Output';
+import Output2 from './components/Output2';
+import Output3 from './components/Output3';
 
 
 
@@ -27,6 +29,8 @@ import Output from './components/Output';
                     <Route path="/Uploadvideo" element={<VideoUpload />} />
                     <Route path="/AccidentVideos" element={<AccidentVideo />} />
                     <Route path="/Output" element={<Output />} />
+                    <Route path="/Output2" element={<Output2 />} />
+                    <Route path="/Output3" element={<Output3 />} />
                 </Routes>
             </Sidebar>
             </Router>

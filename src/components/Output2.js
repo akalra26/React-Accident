@@ -37,13 +37,13 @@ import React, { useState, useEffect } from 'react';
 import './Output.css';
 import axios from 'axios';
 
-function Output() {
+function Output2() {
   const [apiResponse, setApiResponse] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
   const getoutput = () => {
     console.log("getting output");
-    axios.get('http://localhost:3001/run-script1', {
+    axios.get('http://localhost:3001/run-script2', {
       // Add your request payload data here
     })
       .then(response => {
@@ -82,4 +82,4 @@ function Output() {
   );
 }
 
-export default Output;
+export default Output2;

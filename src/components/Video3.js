@@ -32,7 +32,7 @@ function Video3({ num }) {
     //     // Handle any errors that occurred during the API call
     //     console.error(error);
     //   });
-    navigate("/Output");
+    navigate("/Output3");
     console.log("navigating to output")
   };
 
